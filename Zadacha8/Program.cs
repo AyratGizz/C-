@@ -1,18 +1,25 @@
-﻿Console.WriteLine("Введите три числа и программа определит какое больше!");
+﻿Console.WriteLine("Программа покажет всё чётные от 1 до вашего числа!");
 
-Console.Write("Введите первое число: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите второе число: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
+int i = 1;
+bool inoe = true;
 
-Console.Write("Введите третье число: ");
-int number3 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Чётные числа от 1 до " + number);
+Console.WriteLine(": ");
+while (i <= number)
+{
+    if (i % 2 != 1)
+    {
+        Console.Write(i + ", ");
+        inoe = false;
+    }
+    i++;
+}
 
-int max = number1;
-if (number1 > max) max = number1;
-if (number2 > max) max = number2;
-if (number3 > max) max = number3;
-
-Console.Write("Большее число: ");
-Console.Write(max);
+if (inoe)
+{
+    Console.WriteLine("В диапазоне нет чётных чисел!");
+}
+        

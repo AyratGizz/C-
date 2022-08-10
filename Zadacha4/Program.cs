@@ -1,4 +1,4 @@
-﻿Console.Write("Введите три числа и программа опредил большее из них!");
+﻿Console.WriteLine("Введите три числа и программа опредил большее из них!");
 Console.Write("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 
@@ -10,9 +10,9 @@ int number3 = Convert.ToInt32(Console.ReadLine());
 
 int max = number1;
 
-if (number1 > number2) max = number1;
-if (number2 > number3) max = number2;
-if (number3 > number2) max = number3;
+if (number2 > max) max = number2;
+if (number3 > max) max = number3;
+
 
 Console.Write("Большее число: ");
 Console.Write(max);

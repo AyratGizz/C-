@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Введите два числа и программа определит какое больше!");
+﻿Console.WriteLine("Введите два числа и программа определит какое больше, а какое меньше!");
 
 Console.Write("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());

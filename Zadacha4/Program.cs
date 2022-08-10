@@ -1,4 +1,5 @@
-﻿Console.Write("Введите первое число: ");
+﻿Console.Write("Введите три числа и программа опредил большее из них!");
+Console.Write("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите второе число: ");

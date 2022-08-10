@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Программа покажет всё чётные от 1 до вашего числа!");
+﻿Console.WriteLine("Программа покажет всt чётные от 1 до вашего числа!");
 
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());

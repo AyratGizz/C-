@@ -1,4 +1,5 @@
-﻿//Console.Write("Введите ваше имя: "); // Console.WriteLine - с новой строки
+﻿
+///Console.Write("Введите ваше имя: "); // Console.WriteLine - с новой строки
 //string username = Console.ReadLine(); // считываение введенных данных и присваивание к переменной  username
 //Console.Write("Привет, "); // вывод на экран 
 //Console.Write(username);// подтягивание переменной и вывод на экран

@@ -2,7 +2,7 @@
 
 Console.WriteLine("Программа принимает на вход трехзначное число и выводит вторую цифру числа!");
 
-Console.Write("Введи трёхзначное число: ");
+Console.Write("Введите трёхзначное число: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
 string stringNumber = Convert.ToString(number);

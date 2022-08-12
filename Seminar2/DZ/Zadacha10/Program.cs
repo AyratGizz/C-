@@ -4,6 +4,7 @@ Console.WriteLine("Программа принимает на вход трех�
 
 Console.Write("Введи трёхзначное число: ");
 
-int Number = Convert.ToInt32(Console.ReadLine());
-string stringNumber = Convert.ToString(Number);
+int number = Convert.ToInt32(Console.ReadLine());
+string stringNumber = Convert.ToString(number);
 Console.WriteLine("Вторая цифра этого числа: "+stringNumber[1]);
+

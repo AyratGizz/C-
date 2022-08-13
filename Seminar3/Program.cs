@@ -5,9 +5,10 @@
 // int x = Convert.ToInt32(Console.ReadLine());
 
 // int y = Convert.ToInt32(Console.ReadLine());
-// int result = FindNumberQuarter(x, y);
 
-// if (result == -1)
+// int result = FindNumberQuarter(x,y);
+
+// if(result == -1)
 // {
 //     Console.WriteLine("Что-то пошло не так");
 // }
@@ -15,28 +16,29 @@
 
 // int FindNumberQuarter(int x, int y)
 // {
-//     if (x > 0 && y = 0)
+//     if(x > 0 && y > 0)
 //     {
 //         return 1;
 //     }
 
-//     if (x < 0 && y > 0)
+//     if(x < 0 && y > 0)
 //     {
 //         return 2;
 //     }
 
-//     if (x < 0 && y < 0)
+//     if(x < 0 && y < 0)
 //     {
 //         return 3;
 //     }
 
-
-//     if (x > 0 && y < 0)
+//     if(x > 0 && y < 0)
 //     {
 //         return 4;
 //     }
-//     throw new Exception("Введено не верное число!"); //return -1;
+
+//    return -1; //     throw new Exception("Введено не верное число!");
 // }
+
 
 //--------------------------------------------------------------
 // Console.Write("Введите x1= ");

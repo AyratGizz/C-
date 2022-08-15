@@ -22,9 +22,7 @@ else
 {
     Console.WriteLine("Ваше число не палиндром.");
 }
-
-
-
+//*** Метод 2 через for----------------------------------
 // Console.WriteLine("Введите число");
 // string number = Console.ReadLine();
 // string number1 = "";
@@ -37,11 +35,11 @@ else
 //     }
 //     if (number == number1)
 //     {
-//         return "Да";
+//         return "Ваше число палиндром.";
 //     }
 //     else
 //     {
-//         return "Нет";
+//         return "Ваше число не палиндром.";
 //     }
 
 // }

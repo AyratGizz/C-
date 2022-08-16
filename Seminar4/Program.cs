@@ -11,3 +11,11 @@
 • «Программирование на C# для начинающих. Особенности языка», Васильев Алексей Николаевич
 • «Разработка обслуживаемых программ на языке C#», Джуст Виссер
 */
+// class TestCkass
+// {
+//     static void Main(string [] args)
+//     {
+//         int number = Convert.ToInt32(Console.ReadLine());
+//         Calculator 
+//     }
+// }

@@ -1,16 +1,18 @@
-// class TestClass
-// {
+// public class Calculator {
+//     public Calculator(string color){
+//         Color = color;
+//     }
 
-//     static void Main(string[] args);
-// public class Calculator
-// {
+//     public Calculator(){
+//     }
 
-//         public string Color;
-//     public bool CheckNumber (int number)
+
+//     public string Color;
+
+//     public bool CheckNumber(int number)
 //     {
-//         if (number % 2 ==0)
+//         if (number % 2 == 0)
 //         {
-//             Color = "green"
 //             return true;
 //         }
 //         else
@@ -18,5 +20,4 @@
 //             return false;
 //         }
 //     }
-// }
 // }

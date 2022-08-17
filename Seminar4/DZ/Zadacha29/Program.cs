@@ -5,9 +5,9 @@
 Console.Write("Введите ряд чисел, через запятую : ");
 string? seriesOfNumbers = Console.ReadLine();
 
-seriesOfNumbers = seriesOfNumbers + ",";    // дополнительня запятая для поиска конца строки (массива)
+seriesOfNumbers = seriesOfNumbers + ",";    // дополнительня запятая для поиска конца строки
 
-string RemovingSpaces(string series) // функция для удаления пробелов из строки, если ввели через пробел...
+string RemovingSpaces(string series) // функция для удаления пробелов из строки, если введено через пробел...
 {
     string seriesNew = "";
     for (int i = 0; i < series.Length; i++)

@@ -64,7 +64,7 @@ int[] ArrayNumbers(string seriesNew) // функция  для создания 
 }
 
 
-void PrintArry(int[] coll)// вывод массива в консоль (на печать)
+void PrintArry(int[] coll) // функция вывода массива в консоль (на печать)
 {
     int count = coll.Length;
     int index = 0;

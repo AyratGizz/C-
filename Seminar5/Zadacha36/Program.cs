@@ -36,7 +36,7 @@ int SumNumbersOddPlaces (int[] arr)
     int sum = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i % 2 !=1)
+        if (i % 2 !=0)
         {
         sum = sum + arr[i];
         }

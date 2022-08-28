@@ -1,2 +1,68 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+Например, задан массив:
+1 4 7 2
+5 9 2 3
+8 4 2 4
+Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+*/
+Console.Write("Введите количество строк массива m: ");
+bool row = int.TryParse(Console.ReadLine(), out int m);
+Console.Write("Введите количество столбцов массива n: ");
+bool columns = int.TryParse(Console.ReadLine(), out int n);
+
+if (row == false || columns == false)
+{
+    Console.WriteLine("Введены не правильные данные!");
+    return;
+}
+
+int[,] FillArray2D(int m, int n)
+{
+    int[,] array = new int[m, n];
+    Random random = new Random();
+    int avarage = 0;
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i, j] = random.Next(0, 10);
+        }
+        
+    }    
+    return array;
+}
+
+void ArithmeticMean (int[,] array)
+{
+for (int j = 0; j < array.GetLength(1); j++)
+{
+    int avarage = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        avarage = (avarage + array[i, j]);
+    }
+    avarage = avarage / m;
+    Console.Write (avarage + "; ");
+}
+}
+PrdoubleArray2D(FillArray2D(m, n));
+
+
+
+void PrdoubleArray2D(int[,] array) // метод для вывода в консоль
+
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write($"{array[i, j]} ");
+        }
+        Console.WriteLine();
+    }
+}
+
+int[,] result = FillArray2D(m, n);
+PrdoubleArray2D(result);
+

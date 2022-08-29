@@ -28,29 +28,15 @@ int[,] FillArray2D(int m, int n)
         {
             array[i, j] = random.Next(0, 10);
         }
-        
-    }    
+
+    }
     return array;
 }
 
-void ArithmeticMean (int[,] array)
-{
-for (int j = 0; j < array.GetLength(1); j++)
-{
-    int avarage = 0;
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        avarage = (avarage + array[i, j]);
-    }
-    avarage = avarage / m;
-    Console.Write (avarage + "; ");
-}
-}
-PrdoubleArray2D(FillArray2D(m, n));
+int[,] result = FillArray2D(m, n);
+PrintArray2D(result);
 
-
-
-void PrdoubleArray2D(int[,] array) // метод для вывода в консоль
+void PrintArray2D(int[,] array)
 
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -63,6 +49,31 @@ void PrdoubleArray2D(int[,] array) // метод для вывода в конс
     }
 }
 
-int[,] result = FillArray2D(m, n);
-PrdoubleArray2D(result);
+void ArithmeticMeanArray (int[,] result)
+{
+for (int i = 0; i < m; i++)
+{
+    double arithmeticMean = 0;
+    for (int j = 0; j < n; j++)
+    {
+        arithmeticMean += result[j, i];
+    }
+    arithmeticMean = Math.Round(arithmeticMean / m, 1);
+    Console.WriteLine($"Среднеарефметическое столбца № {i + 1} : {arithmeticMean}");
+}
+}
+ArithmeticMeanArray(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
 

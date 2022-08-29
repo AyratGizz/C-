@@ -10,12 +10,13 @@
 5 -> 1 , 0
 18 -> нет такого элемента
 */
+
 Console.Write("Введите количество строк массива m: ");
 bool row = int.TryParse(Console.ReadLine(), out int m);
 Console.Write("Введите количество столбцов массива n: ");
 bool columns = int.TryParse(Console.ReadLine(), out int n);
 Console.Write("Введите число которое нужно найти в массиве: ");
-bool Number = int.TryParse(Console.ReadLine(), out int num);
+bool Number = double.TryParse(Console.ReadLine(), out double num);
 
 if (row == false || columns == false || Number == false)
 {
@@ -32,13 +33,13 @@ int[,] FillArray2D(int m, int n)
     {
         for (int j = 0; j < n; j++)
         {
-            array[i, j] = random.Next(-100, 100);
+            array[i, j] = random.Next(0, 10);
         }
     }
     return array;
 }
 
-void PrdoubleArray2D(int[,] array) // метод для вывода в консоль
+void PrintArray2D(int[,] array)
 
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -52,13 +53,28 @@ void PrdoubleArray2D(int[,] array) // метод для вывода в конс
 }
 
 int[,] result = FillArray2D(m, n);
-PrdoubleArray2D(result);
-SearchingNumberArray(result);
+PrintArray2D(result); // вывод в консоль массива
 
-int[] SearchingNumberArray (int[,] array)
+void SearchNumberArray(int[,] arr, double num) // метод поиска заданного числа в массиве и вывод в консоль индекса
 {
-    for (int i = 0; i < array.Length; i++)
+    double result = 0;
+
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        if num = 
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            if (arr[i, j] == num)
+            {
+                result = arr[i, j];
+                Console.WriteLine($"Индекс числа в массиве: [{i},{j}]");
+            }
+        }
+    }
+    if (num != result)
+    {
+        Console.WriteLine("Такого числа нет!");
     }
 }
+
+SearchNumberArray(result, num);
+

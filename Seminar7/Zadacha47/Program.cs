@@ -32,7 +32,7 @@ double[,] FillArray2D(int m, int n)
     return array;
 }
 
-void PrdoubleArray2D(double[,] array) // метод для вывода в консоль
+void PrintArray2D(double[,] array) // метод для вывода в консоль
 
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -46,4 +46,4 @@ void PrdoubleArray2D(double[,] array) // метод для вывода в ко�
 }
 
 double[,] result = FillArray2D(m, n);
-PrdoubleArray2D(result);
+PrintArray2D(result);

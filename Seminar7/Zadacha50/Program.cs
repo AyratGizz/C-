@@ -33,7 +33,7 @@ int[,] FillArray2D(int m, int n)
     {
         for (int j = 0; j < n; j++)
         {
-            array[i, j] = random.Next(0, 10);
+            array[i, j] = random.Next(0, 11);
         }
     }
     return array;
@@ -72,7 +72,7 @@ void SearchNumberArray(int[,] arr, double num) // метод поиска зад
     }
     if (num != result)
     {
-        Console.WriteLine("Такого числа нет!");
+        Console.WriteLine("Такого числа в массиве нет!");
     }
 }
 

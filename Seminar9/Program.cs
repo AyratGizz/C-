@@ -1,6 +1,5 @@
 ﻿// Семинар 9. Как не нужно писать код. Часть 3.
-/*
-// Задача 63
+/*// Задача 63
 Console.Clear();
 Console.WriteLine("Введите число inputString");
 int inputString = Convert.ToInt32(Console.ReadLine());
@@ -33,8 +32,7 @@ Console.WriteLine(result);
 
 */
 
-/*
-//Задача 65
+/*//Задача 65
 Console.WriteLine("Введите число inputString");
 int inputString = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число M");
@@ -61,8 +59,7 @@ string FillStringInNumDiapazon(string Str, int IntIndex, int FromNum)
 string result = FillStringInNumDiapazon(S, inputString, M);
 Console.WriteLine(result);
 */
-/*
-//Задача 67
+/*//Задача 67
 Console.Clear();
 Console.WriteLine("Введите число N");
 string inputString = Console.ReadLine();
@@ -112,8 +109,7 @@ Console.WriteLine(result);
 // System.Console.WriteLine(result);
 */
 
-/*
-//Задача 69
+/*//Задача 69
 Console.Clear();
 Console.WriteLine("Введите число А");
 int inputNum = Convert.ToInt32(Console.ReadLine());
@@ -137,7 +133,7 @@ int MathPow(int a, int Pow, int index = 1)
 
 Console.WriteLine(MathPow(inputNum, inputPow));
 */
-/*
+
 //Задача 69 - Вариант 2
 Console.Clear();
 Console.WriteLine("Введите число А");
@@ -159,6 +155,5 @@ int MathPow(int a, int Pow)
     return result;
 }
 
-Console.WriteLine(MathPow(inputNum, inputPow));
+Console.WriteLine($"Число {inputNum} в степени {inputPow} = {MathPow(inputNum, inputPow)}");
 
-*/

@@ -3,7 +3,6 @@
 */
 
 Console.Clear();
-Console.WriteLine($"Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.\n\nСразу зададим матрицу, которую можно перемножить, т.е. количество столбцов первой равно количеству строк второй");
 Console.WriteLine($"\nВведите размеры матриц и диапазон случайных значений:");
 int m = InputNumbers("Введите число строк 1-й матрицы: ");
 int n = InputNumbers("Введите число столбцов 1-й матрицы (и строк 2-й): ");
@@ -12,18 +11,18 @@ int range = InputNumbers("Введите диапазон случайных ч�
 
 int[,] firstMartrix = new int[m, n];
 CreateArray(firstMartrix);
-Console.WriteLine($"\nПервая матрица:");
+Console.WriteLine("Первая матрица:");
 WriteArray(firstMartrix);
 
 int[,] secomdMartrix = new int[n, p];
 CreateArray(secomdMartrix);
-Console.WriteLine($"\nВторая матрица:");
+Console.WriteLine("Вторая матрица:");
 WriteArray(secomdMartrix);
 
 int[,] resultMatrix = new int[m,p];
 
 MultiplyMatrix(firstMartrix, secomdMartrix, resultMatrix);
-Console.WriteLine($"\nПроизведение первой и второй матриц:");
+Console.WriteLine("Произведение первой и второй матриц:");
 WriteArray(resultMatrix);
 
 void MultiplyMatrix(int[,] firstMartrix, int[,] secomdMartrix, int[,] resultMatrix)

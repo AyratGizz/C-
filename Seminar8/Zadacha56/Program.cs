@@ -2,8 +2,7 @@
 Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 */
 Console.Clear();
-Console.WriteLine($"Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.");
-Console.WriteLine($"\nВведите размер массива m x n и диапазон случайных значений:");
+Console.WriteLine("Введите размер массива m x n и диапазон случайных значений:");
 int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");
 int range = InputNumbers("Введите диапазон: от 1 до ");
@@ -24,7 +23,7 @@ for (int i = 1; i < array.GetLength(0); i++)
   }
 }
 
-Console.WriteLine($"\n{minSumLine+1} - строкa с наименьшей суммой ({sumLine}) элементов ");
+Console.WriteLine($"{minSumLine+1} - строкa с наименьшей суммой ({sumLine}) элементов ");
 
 
 int SumLineElements(int[,] array, int i)
